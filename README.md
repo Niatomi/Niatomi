@@ -50,7 +50,7 @@
 <div>
   <a href="https://github.com/Niatomi">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark&hide=Jupyter Notebook"/>
 </div>
 
 ![Profile views](https://gpvc.arturio.dev/niatomi)
