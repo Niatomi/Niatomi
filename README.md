@@ -1,4 +1,4 @@
-## <img height="40" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/> Hi, my name is Nia
+## <img height="25" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/> Hi, my name is Nia
 
 <img align="right" src="./developer.gif" style="border-radius: 5px" alt="Hola Coders" width="390" height="260"/>
 
