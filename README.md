@@ -8,7 +8,7 @@
 - 🌱 I’m currently learning **Angular**
 - 💬 Ask me about **Java**
 - 📫 How to reach me: playervoker@gmail.com
-- 🤔 Pronouns: He/His
+- 🗿 Pronouns: He/His
 
 ### Connect with me:
 
