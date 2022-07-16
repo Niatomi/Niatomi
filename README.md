@@ -1,6 +1,6 @@
 ## <img height="25" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/> Hi, my name is Nia
 
-<img align="right" src="./developer.gif" style="border-radius: 5px" alt="Hola Coders" width="390" height="260"/>
+<img align="right" src="./developer1.gif" style="border-radius: 5px" alt="Hola Coders" width="390" height="260"/>
 
 ### I am a junior at building web applications.
 
