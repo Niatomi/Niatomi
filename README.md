@@ -12,7 +12,7 @@
 
 ### Connect with me:
 
-## [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/vk.svg' alt='github' height='40' style='background-color: white;'>](https://vk.com/niatomi)
+## [<img src='./vk.svg' alt='github' height='40' style='background-color: white;'>](https://vk.com/niatomi)
 
 ### Languages and Tools:
 
