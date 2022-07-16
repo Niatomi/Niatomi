@@ -7,7 +7,7 @@
 - 🔭 I’m currently working on [Environment-meter](https://github.com/Niatomi/environment-meter).
 - 🌱 I’m currently learning **Angular**
 - 💬 Ask me about **Java**
-- 📫 How to reach me: [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:playervoker@gmail.com)
+- 📫 How to reach me: playervoker@gmail.com
 - 🤔 Pronouns: He/His
 
 ### Connect with me:
@@ -47,14 +47,10 @@
 
 ---
 
-### Languages
-
----
-
 <div>
   <a href="https://github.com/Niatomi">
-  <img height="180em" src="https://gitcard-info.herokuapp.com/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark&hide=Jupyter Notebook"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark"/>
 </div>
 
 ![Profile views](https://gpvc.arturio.dev/niatomi)
