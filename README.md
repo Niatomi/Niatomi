@@ -45,6 +45,8 @@
 <br/>
 <br/>
 
+---
+
 <div>
   <a href="https://github.com/Niatomi">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
