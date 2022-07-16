@@ -1,6 +1,6 @@
 ## Hi 👋, my name is Nia
 
-<img align="right" src="./developer.gif" style="border-radius: 5px" alt="Hola Coders" width="500" height="350"/>
+<img align="right" src="./developer.gif" style="border-radius: 5px" alt="Hola Coders" width="390" height="260"/>
 
 ##### I am a junior at building web applications.
 
@@ -18,6 +18,7 @@
   <a href="https://github.com/Niatomi">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/wakatime?username=@0daed6a9-3466-4380-a19c-86ee6878fa51&theme=dark"/>
 </div>
 
 ![Profile views](https://gpvc.arturio.dev/niatomi)
