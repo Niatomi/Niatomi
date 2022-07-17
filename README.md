@@ -14,6 +14,7 @@
 
 [<img src='./vk.svg' alt='github' height='40' style='background-color: white;'>](https://vk.com/niatomi)
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg' alt='github' height='40'>](mailto:playervoker@gmail.com)
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/telegram.svg' alt='github' height='40'>](https://t.me/donilker)
 
 ### Technology stack:
 
