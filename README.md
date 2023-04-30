@@ -8,38 +8,17 @@
 - 💬 Ask me about **Java, Python**
 - 🗿 Pronouns: He/His
 
-## Connect with me:
-
-<div>
-
-
-<a href='https://t.me/donilker'>
-
-```
-+-----------+
-| Telegram  |
-+-----------+
-```
-</a>
-
-
-<span>
-  <a href='https://vk.com/niatomi'>
-    <img src='./images/vk_colourful.svg' alt='github' height='40' style='background-color: white;'>
-  </a>
-  <a href='mailto:playervoker@gmail.com'>
-    <img src='./images/gmail.svg' alt='github' height='40'>
-  </a>
-    <img src='./images/telegram.svg' alt='github' height='40'>
-</span>
-</div>
+<big><pre>
+Connect with me.
++-----------+ +-----------+ +-----------+
+| [**TELEGRAM**](https://t.me/donilker)  | | [**VK**](https://vk.com/niatomi)        | | [**GMAIL**](mailto:playervoker@gmail.com)     |
++-----------+ +-----------+ +-----------+
+</pre></big>
 
 ---
 
-## 
-
 ```
-                                                      Technology stack
+Technology stack.
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
 |          |        | Frameworks | Concurrency    | Libs       | ML         | Servers | Databases  | Audio      |
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
@@ -57,7 +36,7 @@
 |          |--------+------------+----------------+------------------------+----------+-------------------------+
 |          |        | Frameworks | Tools          | APIs                   | Tools    | Databases               |
 |          |--------+------------+----------------+------------------------+----------+-------------------------+
-| Backend  |  Java  | Spring-Boot| Maven          | Stream Api             | Lombok   | Spring-data             |
+| Backend  | Java   | Spring-Boot| Maven          | Stream Api             | Lombok   | Spring-data             |
 |          |        | Spring-Ws  | Gradle         | Persistence Api        | Junit    | Liquibase               |
 |          |        |            |                |                        | Mapstruct| H2                      |
 |          |        |            |                |                        | Springdoc| JDBC                    |
@@ -67,7 +46,7 @@
 |          |--------+------------+----------------+------------------------+------------------------------------+
 |          |        | DB         | Brokers        | DevOPS                 | VCS                                |
 |          |--------+------------+----------------+------------------------+------------------------------------+
-|          |  Tools | RabbitMQ   | RabbitMQ       | Docker                 | Git                                |
+|          | Tools  | RabbitMQ   | RabbitMQ       | Docker                 | Git                                |
 |          |        | MongoDB    |                | Docker-compose         | GitHub                             |
 |          |        | PostreSQL  |                |                        | GitLab                             |
 |          |        | MySQL      |                |                        | Github Actions                     |
@@ -119,3 +98,4 @@
 </div>
 
 ![Profile views](https://gpvc.arturio.dev/niatomi)
+
