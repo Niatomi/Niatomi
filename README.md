@@ -1,4 +1,4 @@
-# <img height="25" src="https://raw.githubusercontent.com/innng/innng/master/assets/kyubey.gif"/> Hi, my name is Nia
+# Hi, my name is Nia
 
 <img align="right" src="./images/developer.gif" style="border-radius: 5px" alt="Hola Coders" width="390" height="260"/>
 
@@ -110,7 +110,9 @@
 
   <a  href="https://github.com/Niatomi">
   <span style='text-align: center'>
-  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark&hide=Jupyter Notebook"/>
+  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
+
+  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark&hide=Jupyter Notebook"/>
   </span>
   </a>
 
