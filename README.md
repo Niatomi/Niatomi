@@ -1,10 +1,12 @@
 # Hi, my name is Nia
 
-## I am a middle at building web applications.
+```ascii
+I am a middle at building web applications.
 
 - 🌱 I’m currently learning **Vue**
 - 💬 Ask me about **Java, Python**
 - 🗿 Pronouns: He/His
+```
 
 <big><pre>
 Connect with me.
@@ -13,7 +15,7 @@ Connect with me.
 +-----------+ +-----------+ +-----------+
 </pre></big>
 
-```
+```ascii
 Technology stack.
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
 |          |        | Frameworks | Concurrency    | Libs       | ML         | Servers | Databases  | Audio      |
@@ -84,11 +86,9 @@ Technology stack.
 <div>
 
   <a  href="https://github.com/Niatomi">
-  <span style='text-align: center'>
-  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=dark&show_icons=true&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=niatomi&theme=github_dark"/>
+  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=github_dark&hide_border=true&show_icons=true&include_all_commits=true&count_private=true"/>
 
-  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api/top-langs/?username=niatomi&layout=compact&langs_count=6&theme=dark&hide=Jupyter Notebook"/>
-  </span>
   </a>
 
 </div>
