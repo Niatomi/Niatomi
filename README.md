@@ -1,6 +1,6 @@
 # Hi, my name is Nia
 
-<img align="right" src="./images/ascii-rabit-gif-1712336.gif" style="border-radius: 5px" alt="Hola Coders"  height="260"/>
+<img align="right" src="./images/ascii-rabit-gif-1712336.gif" style="border-radius: 5px" alt="Hola Coders"  height="100"/>
 
 ## I am a middle at building web applications.
 
