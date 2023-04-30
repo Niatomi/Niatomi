@@ -1,14 +1,12 @@
 # Hi, my name is Nia
 
-```ascii
+<big><pre>
 I am a middle at building web applications.
 
-- 🌱 I’m currently learning **Vue**
-- 💬 Ask me about **Java, Python**
-- 🗿 Pronouns: He/His
-```
+🌱 I’m currently learning **Vue**
+💬 Ask me about **Java, Python**
+🗿 Pronouns: He/His
 
-<big><pre>
 Connect with me.
 +-----------+ +-----------+ +-----------+
 | [**TELEGRAM**](https://t.me/donilker)  | | [**VK**](https://vk.com/niatomi)        | | [**GMAIL**](mailto:playervoker@gmail.com)     |
