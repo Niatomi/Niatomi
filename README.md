@@ -10,9 +10,7 @@ I am a middle at building web applications.
 Connect with me.
 +-----------+ +-----------+ +-----------+
 | [**TELEGRAM**](https://t.me/donilker)  | | [**VK**](https://vk.com/niatomi)        | | [**GMAIL**](mailto:playervoker@gmail.com)     |
-+-----------+ +-----------+ +-----------+
-</pre></big>
-
++-----------+ +-----------+ +-----------+</pre></big>
 ```ascii
 Technology stack.
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
