@@ -88,6 +88,3 @@ Technology stack.
   </a>
 
 </div>
-
-![Profile views](https://gpvc.arturio.dev/niatomi)
-
