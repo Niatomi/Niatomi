@@ -82,8 +82,8 @@ Technology stack.
 <div>
 
   <a  href="https://github.com/Niatomi">
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=niatomi&theme=github_dark"/>
-  <img height="180em" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=github_dark&hide_border=true&show_icons=true&include_all_commits=true&count_private=true"/>
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=niatomi&theme=github_dark"/>
+  <img width="100%" src="https://readme-stats-niatomi.vercel.app/api?username=niatomi&theme=github_dark&hide_border=true&show_icons=true&include_all_commits=true&count_private=true"/>
 
   </a>
 
