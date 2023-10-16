@@ -3,8 +3,7 @@
 <big><pre>
 I am a middle at building web applications.
 
-🌱 I’m currently learning **Vue**
-💬 Ask me about **Java, Python**
+🌱 I’m currently learning **Rust**
 🗿 Pronouns: He/His
 
 Connect with me.
