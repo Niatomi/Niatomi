@@ -1,11 +1,6 @@
 # Hi, my name is Nia
 
 <big><pre>
-I am a middle at building web applications.
-
-🌱 I’m currently learning **Rust**
-🗿 Pronouns: He/His
-
 Connect with me.
 +-----------+ +-----------+ +-----------+
 | [**TELEGRAM**](https://t.me/niatomi)  | | [**VK**](https://vk.com/niatomi)        | | [**GMAIL**](mailto:playervoker@gmail.com)     |
