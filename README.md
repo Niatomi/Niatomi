@@ -10,14 +10,18 @@ Technology stack.
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
 |          |        | Frameworks | Concurrency    | Libs       | ML         | Servers | Databases  | Audio      |
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
-|          |        | FastAPI    | AsyncIO        | Numpy      | Tensorflow | Uvicorn | Alembic    | TorchAudio |
-|          |        | OpenCV     | Threading      | Pika       | PyTorch    | Gunicorn| Asyncpg    | WebRTC     |
-|          |        |            | Multiprocessing| orjson     | Spacy      |         | Sqlalchemy | Vosk       |
-|          |        |            |                | Telebot    | Pandas     |         | TortoiseORM| PyAudio    |
-|          | Python |            |                | Jose       | Scipy      |         | Redis      | Sounddevice|
+|          |        | FastAPI    | AsyncIO        | Numpy      | Spacy      | Uvicorn | Alembic    | TorchAudio |
+|          |        | OpenCV     | Threading      | Pika       | Pandas     | Gunicorn| Asyncpg    | WebRTC     |
+|          |        |            | Multiprocessing| orjson     | Scipy      |         | Sqlalchemy | Vosk       |
+|          |        |            |                | Telebot    |            |         | TortoiseORM| PyAudio    |
+|          | Python |            |                | Jose       |            |         | Redis      | Sounddevice|
 |          |        |            |                | Pydantic   |            |         |            |            |
 |          |        |            |                | Requests   |            |         |            |            |
 |          |        |            |                | Websockets |            |         |            |            |
+|          |        |            |                | unittest   |            |         |            |            |
+|          |        |            |                | pytest     |            |         |            |            |
+|          |        |            |                | flake8     |            |         |            |            |
+|          |        |            |                | logging    |            |         |            |            |
 |          |        |            |                | httpx      |            |         |            |            |
 |          |--------+------------+----------------+------------+------------+---------+------------+------------+
 |          |                                                                                                    |
@@ -37,14 +41,16 @@ Technology stack.
 |          | Tools  | MySQL      | RabbitMQ       | Docker                 | Git                                |
 |          |        | MongoDB    |                | Docker-compose         | GitHub                             |
 |          |        | PostreSQL  |                | Nginx                  | GitLab                             |
-|          |        | Redis      |                |                        | Github Actions                     |
+|          |        | Redis      |                | Dozzle                 | Github Actions                     |
+|          |        | ClickHouse |                |                        |                                    |
 +----------+--------+------------+----------------+------------------------+------------------------------------+
 +----------+--------+-------------------------------------------------------------------------------------------+
-|          | Basics | Frameworks                                                                                |
+|          | Basics | Frameworks | Preprocessors | Testing | State Libs | Clients | Tools                       |
 |          |--------+-------------------------------------------------------------------------------------------+
-| Frontend | HTML   | Vue                                                                                       |
-|          | CSS    | Angular                                                                                   |
-|          | JS     |                                                                                           |
+| Frontend | HTML   | Vue        | SCSS          | Cypress | Redux      | Axios   | NPM                         |
+|          | CSS    | Angular    | SASS          |         | Vuex       |         | Webpack                     |
+|          | JS     | Electron   |               |         |            |         |                             |
+|          | TS     | React      |               |         |            |         |                             |
 +----------+--------+-------------------------------------------------------------------------------------------+
 +----------+-------------------+-------------+----------+----------------------+--------------------------------+
 |          |                   | IDE         | Languages| Frameworks           | Platforms                      |
