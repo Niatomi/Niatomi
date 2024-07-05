@@ -87,7 +87,7 @@ skin=modarin256root-defbg
 
 [Layout]
 output_lines=0
-left_panel_size=93
+left_panel_size=105
 top_panel_size=0
 message_visible=false
 keybar_visible=true

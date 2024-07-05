@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 
 
@@ -114,12 +121,26 @@ eval "$(pyenv virtualenv-init -)"
 
 alias cls='clear'
 alias py='python'
-alias upd='sudo dnf update -y && sudo dnf upgrade -y'
-alias exp='xdg-open .'
+alias cdc='cd ..'
+alias cdd='cd ~/Desktop'
+alias upd='sudo apt update -y && sudo apt upgrade -y'
+alias exp='xdg-open . &> /dev/null 2>&1 &'
 alias :q='exit'
-alias :bb='poweroff'
-alias :ff='reboot'
-alias c='code .'
+alias :bb='systemctl poweroff'
+alias :ff='systemctl reboot'
+alias c='code . &> /dev/null 2>&1 &'
+alias vi='nvim'
+alias xpid="xprop _NET_WM_PID | cut -d' ' -f3"
 
-cd Desktop
 
+quietly() {
+    # execute the remaining arguments as a command, but redirect output
+    "$@" > /dev/null
+}
+alias op="quietly xdg-open"
+
+cd ~/Desktop
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
