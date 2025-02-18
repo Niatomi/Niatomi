@@ -1,82 +1,71 @@
-# Windows key as mod
-set $mod Mod4
-
 # Fonts configure
-font pango:Meslo LG S for Powerline 9
+font pango:monospace 8
 
-## window bindings
-floating_modifier $mod
-tiling_drag modifier titlebar
-bindsym $mod+Shift+q kill
-set $refresh_i3status killall -SIGUSR1 i3status
+exec --no-startup-id dex --autostart --environment i3
 
-## xss-lock
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-bindsym Control+Mod1+l exec "i3lock -c 000000"
 
-# NetworkManager
 exec --no-startup-id nm-applet
 
-# ----- BINDINGS -----
-
-## Brightness bindings
-bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl s +5%
-
-## Audio bindings
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-## App bindings
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+d exec "rofi run -show drun -display-drun '/'"
-bindsym $mod+F1 exec /usr/bin/google-chrome-stable --disable-features=InsecureDownloadWarnings
-bindsym Print exec gnome-screenshot -ic
 
-## i3wm bindings
+# kill focused window
+bindsym $mod+Shift+q kill
 
-### change focus
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id dmenu_run
+
+# change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
-### move focused window
+# move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
-### alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-### split in horizontal orientation
+# split in horizontal orientation
 bindsym $mod+h split h
-## split in vertical orientation
+
+# split in vertical orientation
 bindsym $mod+v split v
 
-### enter fullscreen mode for the focused container
+# enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-### change container layout (stacked, tabbed, toggle split)
+# change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-### toggle tiling / floating
+# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-### focus the parent container
+# focus the parent container
 bindsym $mod+a focus parent
 
-### Workspaces
+# focus the child container
+#bindsym $mod+d focus child
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -88,7 +77,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-### Switch to workspace
+# switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -100,7 +89,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-### move focused container to workspace
+# move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -118,35 +107,45 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-# -----          -----
 
-# -----  RESIZE  -----
+# resize window (you can also use the mouse for that)
 mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-bindsym $mod+r mode "resize"
-# -----          -----
 
-# ----- STARTUP  -----
+bindsym $mod+r mode "resize"
+
+# STARTUP
+
 exec --no-startup-id dex --autostart --environment i3
-exec_always /home/nia/.config/i3/scripts/tap-to-click.sh
-exec_always /home/nia/.config/i3/scripts/inverse-scroll.sh
-exec_always /home/nia/.config/i3/scripts/languages.sh
-exec_always "sh -c 'sleep 2; setxkbmap -layout us,ru -option 'grp:alt_shift_toggle''"
-exec_always --no-startup-id /home/nia/.config/polybar/launch.sh
-exec_always --no-startup-id hsetroot -solid '#24283B'
-exec_always picom --config /home/nia/.config/picom/picom.conf -b
-# -----          -----
+exec_always --no-startup-id /home/nia/.config/i3/scripts/tap-to-click.sh
+exec_always --no-startup-id /home/nia/.config/i3/scripts/inverse-scroll.sh
+exec_always --no-startup-id /home/nia/.config/i3/scripts/languages.sh
+exec_always --no-startup-id "sh -c 'sleep 2; setxkbmap -layout us,ru -option 'grp:alt_shift_toggle''"
 
 # -----  STYLES  -----
-for_window [class="^.*"] border pixel 8
-gaps inner 15
-gaps outer 0
+for_window [class="^.*"] border pixel 5
 # -----          -----
+
+# -------
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+    status_command i3status -c /home/nia/.config/i3/i3status.conf
+}
 
