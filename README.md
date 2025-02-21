@@ -2,9 +2,9 @@
 
 <big><pre>
 Connect with me.
-+-----------+ +-----------+ +-----------+
-| [**TELEGRAM**](https://t.me/niatomi)  | | [**VK**](https://vk.com/niatomi)        | | [**GMAIL**](mailto:playervoker@gmail.com)     |
-+-----------+ +-----------+ +-----------+</pre></big>
++-----------+ +-----------+
+| [**TELEGRAM**](https://t.me/niatomi)  || [**GMAIL**](mailto:playervoker@gmail.com)     |
++-----------+ +-----------+</pre></big>
 ```ascii
 Technology stack.
 +----------+--------+------------+----------------+------------+------------+---------+------------+------------+
