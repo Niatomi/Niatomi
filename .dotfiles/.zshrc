@@ -24,7 +24,6 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # ---
@@ -59,22 +58,20 @@ alias :ff='systemctl reboot'
 ## Explorers
 alias c='code . &> /dev/null 2>&1 &'
 alias vi='nvim'
-alias exp='xdg-open . &> /dev/null &'
+alias v='nvim'
+alias exp='nemo . &> /dev/null 2>&1 &'
 
 ## Short forms of big stuff
 alias cls='clear'
 alias py='python'
 alias upd='sudo apt update -y && sudo apt upgrade -y'
-alias perkele="ssh 'root@whoknows?'"
-
-## OpenVPN
-alias ovpl="openvpn3 sessions-list"
-alias ovp="openvpn3 session-start --config ~/.config/openvpn/niatomi-linux.ovpn"
-alias ovpc="openvpn3 session-manage --disconnect -c /home/nia/.config/openvpn/niatomi-linux.ovpn"
-alias ovpm="openvpn3 session-start --config ~/.config/openvpn/niatom.ovpn"
-alias ovpmc="openvpn3 session-manage --disconnect -c ~/.config/openvpn/niatom.ovpn"
+alias perkele="ssh 'root@109.120.151.167'"
 
 
 alias xpid="xprop _NET_WM_PID | cut -d' ' -f3"
 
 # ---
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
