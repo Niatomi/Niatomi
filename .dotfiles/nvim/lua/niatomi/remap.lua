@@ -7,3 +7,7 @@ vim.keymap.set("n", "<leader>wk", ":wincmd k<CR>")
 vim.keymap.set("n", "<leader>wl", ":wincmd l<CR>")
 
 vim.keymap.set("n", "Q", "<nop>")
+
+vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle l<CR>")
+vim.keymap.set("n", "<leader>tsl", ":NvimTreeResize +10<CR>")
+vim.keymap.set("n", "<leader>tsh", ":NvimTreeResize -10<CR>")

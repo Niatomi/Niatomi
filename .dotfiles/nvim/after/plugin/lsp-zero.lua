@@ -8,20 +8,20 @@ require("mason-lspconfig").setup_handlers {
 
 local cmp = require('cmp')
 cmp.setup({
-  sources = {
-    {name = 'nvim_lsp'},
-  },
-  snippet = {
-    expand = function(args)
-      vim.snippet.expand(args.body)
-    end,
-  },
-  mapping = cmp.mapping.preset.insert({
-	  ['<CR>'] = cmp.mapping.confirm({select = false}),
-	  ['<C-y>'] = cmp.mapping.confirm({select = true}),
-	  ['<M-k>'] = cmp.mapping.select_prev_item(),
-	  ['<M-j>'] = cmp.mapping.select_next_item(),
-  }),
+    sources = {
+        {name = 'nvim_lsp'},
+    },
+    snippet = {
+        expand = function(args)
+            vim.snippet.expand(args.body)
+        end,
+    },
+    mapping = cmp.mapping.preset.insert({
+        ['<CR>'] = cmp.mapping.confirm({select = false}),
+        ['<C-y>'] = cmp.mapping.confirm({select = true}),
+        ['<M-k>'] = cmp.mapping.select_prev_item(),
+        ['<M-j>'] = cmp.mapping.select_next_item(),
+    }),
 })
 
 
