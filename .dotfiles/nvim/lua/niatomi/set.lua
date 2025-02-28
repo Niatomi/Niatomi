@@ -28,3 +28,8 @@ vim.opt.updatetime = 50
 vim.opt.clipboard = "unnamedplus"
 
 -- vim.opt.colorcolumn = "80"
+
+vim.g.pyindent_open_paren = 'shiftwidth()'
+
+vim.opt.listchars = {space = "·", trail = "•"}
+vim.opt.list = true
