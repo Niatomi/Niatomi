@@ -31,5 +31,10 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.g.pyindent_open_paren = 'shiftwidth()'
 
-vim.opt.listchars = {space = "·", trail = "•"}
+vim.opt.listchars = {
+    -- tab = "▒",
+    space = "·",
+    trail = "•",
+    tab = ">-"
+}
 vim.opt.list = true

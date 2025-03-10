@@ -7,6 +7,9 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id /home/nia/.config/i3/scripts/tap-to-click.sh
 exec_always --no-startup-id /home/nia/.config/i3/scripts/inverse-scroll.sh
 exec_always --no-startup-id /home/nia/.config/i3/scripts/languages.sh
+exec_always --no-startup-id /home/nia/.config/i3/scripts/gnome-keyring.sh
+exec_always --no-startup-id /home/nia/.config/i3/scripts/monitors.sh
+
 exec_always --no-startup-id "sh -c 'sleep 2; setxkbmap -layout us,ru -option 'grp:alt_shift_toggle''"
 # ---
 
@@ -18,6 +21,7 @@ font pango:monospace 8
 # BAR
 bar {
     status_command i3status -c /home/nia/.config/i3/i3status.conf
+    tray_output primary
 }
 # ---
 
@@ -28,11 +32,17 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# SPECIAL KEYS
+bindcode 148 exec --no-startup-id /home/nia/.config/i3/scripts/calc-start.sh
+
 # Brightness mappings
 # apt install brightnessctl
 # usermod -aG video ${USER}
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# Flameshot
+bindsym Print exec flameshot gui
 
 floating_modifier $mod
 bindsym $mod+Return exec kitty
@@ -117,10 +127,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
