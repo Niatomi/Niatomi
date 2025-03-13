@@ -52,4 +52,14 @@ return require('packer').startup(function(use)
         }
     }
 
+    use("catgoose/nvim-colorizer.lua")
+
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
 end)
