@@ -167,6 +167,11 @@ _G.packer_plugins = {
     path = "/home/nia/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
     url = "https://github.com/HiPhish/rainbow-delimiters.nvim"
   },
+  ["ruscmd.nvim"] = {
+    loaded = true,
+    path = "/home/nia/.local/share/nvim/site/pack/packer/start/ruscmd.nvim",
+    url = "https://github.com/aveplen/ruscmd.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/nia/.local/share/nvim/site/pack/packer/start/telescope.nvim",
