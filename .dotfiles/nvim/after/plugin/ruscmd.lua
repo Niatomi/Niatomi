@@ -1,1 +1,3 @@
-require('ruscmd').setup{}
+require('ruscmd').setup{
+    keymaps = false
+}

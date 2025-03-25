@@ -1,3 +1,3 @@
 require("colorizer").setup({
-     sass = { enable = true, parsers = { "css" } },
+	sass = { enable = true, parsers = { "css" } },
 })

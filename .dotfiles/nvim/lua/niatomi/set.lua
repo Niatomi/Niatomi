@@ -5,8 +5,10 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+vim.opt.smartindent = true
 
 vim.opt.smartindent = true
+vim.opt.shiftround = true
 
 vim.opt.wrap = true
 vim.opt.swapfile = false
@@ -29,12 +31,12 @@ vim.opt.clipboard = "unnamedplus"
 
 -- vim.opt.colorcolumn = "80"
 
-vim.g.pyindent_open_paren = 'shiftwidth()'
+vim.g.pyindent_open_paren = "shiftwidth()"
 
 vim.opt.listchars = {
-    -- tab = "▒",
-    space = "·",
-    trail = "•",
-    tab = ">-"
+	--tab = "▒",
+	space = "·",
+	trail = "•",
+	tab = ">•",
 }
 vim.opt.list = true
