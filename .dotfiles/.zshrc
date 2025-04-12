@@ -46,6 +46,7 @@ if [[ ./ -ef ~ ]]; then
 fi
 
 # Aliases
+source $HOME/.server_aliases
 
 ## Directory movements
 alias cdc='cd ..'
@@ -57,20 +58,21 @@ alias :q='exit'
 alias :bb='systemctl poweroff'
 alias :ff='systemctl reboot'
 
-## Explorers
+## Apps
 alias c='code . &> /dev/null 2>&1 &'
 alias ws="websocat"
 alias gg="lazygit"
 alias vi='nvim'
 alias v='nvim'
 alias exp='nautilus . &> /dev/null 2>&1 &'
+alias anyop="xdg-open"
+alias mcdu="ncdu"
 
 ## Short forms of big stuff
 alias xcp='xclip -rmlastnl -sel clip'
 alias cls='clear'
 alias py='python'
 alias upd='sudo apt update -y && sudo apt upgrade -y'
-alias perkele="ssh 'root@109.120.151.167'"
 
 ## OpenVPN
 alias ovpl="openvpn3 sessions-list"
@@ -78,7 +80,6 @@ alias ovp="openvpn3 session-start --config ~/.config/openvpn/niatomi-linux.ovpn"
 alias ovpc="openvpn3 session-manage --disconnect -c /home/nia/.config/openvpn/niatomi-linux.ovpn"
 alias ovpm='openvpn3 session-start --config ~/.config/openvpn/monitor.ovpn'
 alias ovpmc="openvpn3 session-manage --disconnect -c ~/.config/openvpn/monitor.ovpn"
-
 
 alias xpid="xprop _NET_WM_PID | cut -d' ' -f3"
 
