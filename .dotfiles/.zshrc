@@ -27,13 +27,11 @@ export PATH="/usr/local/cuda-12.8/bin:${PATH}"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
+# ENV vars
 # ---
 
-# PyEnv add
-
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+. "$HOME/.cargo/env"
+source $HOME/.local/bin/env
 
 # ---
 
@@ -64,7 +62,7 @@ alias ws="websocat"
 alias gg="lazygit"
 alias vi='nvim'
 alias v='nvim'
-alias exp='nautilus . &> /dev/null 2>&1 &'
+alias exp='dolphin . &> /dev/null 2>&1 &'
 alias anyop="xdg-open"
 alias mcdu="ncdu"
 
