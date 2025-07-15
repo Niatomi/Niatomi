@@ -1,24 +1,13 @@
 require("mason").setup()
-require("mason-lspconfig").setup({
-	ensure_installed = { "volar" },
-})
 local lspconfig = require("lspconfig")
 
-require("mason-lspconfig").setup_handlers({
-	function(server_name)
-		local server_config = {}
-		if server_name == "volar" then
-			server_config.filetypes = { "vue", "typescript", "javascript" }
-		end
-		lspconfig[server_name].setup(server_config)
-	end,
-})
+require("mason-lspconfig").setup()
 
 require("conform").setup({
 	formatters_by_ft = {
 		javascript = { "prettier" },
 		json = { "prettier" },
-        c = { "clang-format" },
+		c = { "clang-format" },
 		typescript = { "prettier" },
 		javascriptreact = { "prettier" },
 		typescriptreact = { "prettier" },
